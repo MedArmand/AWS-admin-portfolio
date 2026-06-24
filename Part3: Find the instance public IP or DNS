@@ -1,0 +1,7 @@
+You’ll use this address in your SSH command from Windows.
+
+In EC2 → Instances, select your instance
+
+In the Details tab, copy the Public IPv4 address or Public IPv4 DNS
+
+Keep this handy (e.g., 3.123.45.67 or ec2-3-123-45-67.compute-1.amazonaws.com)
