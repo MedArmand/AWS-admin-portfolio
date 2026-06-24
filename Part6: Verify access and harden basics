@@ -1,0 +1,9 @@
+Confirm you’re in, then do minimal security hygiene on the instance.
+
+Run whoami to confirm the login user
+
+Run sudo yum update -y (Amazon Linux) or sudo apt update && sudo apt upgrade -y (Ubuntu/Debian)
+
+Confirm the instance’s security group only allows SSH from trusted IPs
+
+Consider creating a non-default user and using that for daily SSH
