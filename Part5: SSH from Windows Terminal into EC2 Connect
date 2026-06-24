@@ -1,0 +1,17 @@
+Use the correct username for your AMI and your private key to log in.
+
+Open Windows Terminal (PowerShell or Command Prompt)
+
+For Amazon Linux:
+
+ssh -i C:\Users\YourUser\.ssh\soc-ec2-key.pem ec2-user@<PUBLIC_IP>
+
+For Ubuntu:
+
+ssh -i C:\Users\YourUser\.ssh\soc-ec2-key.pem ubuntu@<PUBLIC_IP>
+
+For Debian (often):
+
+ssh -i C:\Users\YourUser\.ssh\soc-ec2-key.pem admin@<PUBLIC_IP> or root@<PUBLIC_IP>
+
+Type yes when asked to confirm the host fingerprint
