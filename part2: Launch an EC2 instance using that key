@@ -1,0 +1,14 @@
+Launch an EC2 instance using that key
+Attach the key pair to the instance so it will accept your private key for SSH.
+
+In EC2, click Instances → Launch instances
+
+Choose an AMI (e.g., Amazon Linux 2 or Ubuntu)
+
+Pick an instance type (e.g., t2.micro)
+
+Under Key pair (login) select your key (e.g., soc-ec2-key)
+
+Ensure the security group allows SSH (port 22) from your IP
+
+Click Launch instance and wait until its state is running
