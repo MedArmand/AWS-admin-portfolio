@@ -1,0 +1,13 @@
+SSH will refuse to use a private key that is too broadly accessible, so restrict its permissions.
+
+Move the .pem file to a stable folder, e.g., C:\Users\YourUser\.ssh\soc-ec2-key.pem
+
+Open Windows Terminal (PowerShell)
+
+Run (adjust path and username):
+
+icacls "C:\Users\YourUser\.ssh\soc-ec2-key.pem" /inheritance:r
+
+icacls "C:\Users\YourUser\.ssh\soc-ec2-key.pem" /grant:r "$($env:USERNAME):(R)"
+
+This makes the key readable only by your user
