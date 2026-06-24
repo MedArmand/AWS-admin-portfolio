@@ -1,0 +1,11 @@
+You can generate a key on Windows with ssh-keygen and import only the public key into EC2.
+
+On Windows: ssh-keygen -t ed25519 -C "you@example.com" (for Linux instances)
+
+Copy the contents of id_ed25519.pub
+
+In EC2 Key Pairs, choose Import key pair
+
+Paste the public key, name it, and use that key pair when launching instances
+
+Connect with: ssh -i C:\Users\YourUser\.ssh\id_ed25519 ec2-user@<PUBLIC_IP>
