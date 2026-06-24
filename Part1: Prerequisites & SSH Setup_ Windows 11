@@ -1,0 +1,18 @@
+Create an EC2 key pair in AWS
+Start here
+Generate the key pair in the EC2 console so AWS stores the public key and you keep the private key.
+
+Sign in to the AWS Console
+
+Go to EC2 → Network & Security → Key Pairs
+
+Click Create key pair
+
+Enter a name (e.g., soc-ec2-key)
+
+Key pair type: RSA
+
+Private key file format: pem
+
+Click Create key pair and save the downloaded .pem file somewhere safe (e.g., C:\Users\YourUser\keys\soc-ec2-key.pem)
+=======================================================================================================================
